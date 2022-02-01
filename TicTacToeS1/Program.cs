@@ -58,7 +58,12 @@ namespace TicTacToeS1
             Console.Clear();
             Draw(gameBoard);
             Console.Write("Game ended! ");
-            // TODO: print who won
+            if (player1Won)
+                Console.WriteLine("Winner: " + p1.Name);
+            else if (player2Won)
+                Console.WriteLine("Winner: " + p2.Name);
+            else
+                Console.WriteLine("A tie!");
         }
         
         /******************************************************************/
